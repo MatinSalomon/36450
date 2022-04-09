@@ -78,7 +78,7 @@ nav ul li:hover{
 }
 @keyframes animacion_texto{
 	from{
-		transform: translateX(-1200px);
+		transform: translateX(-1100px);
 		opacity: 0;
 	}
 	to{
