@@ -416,6 +416,7 @@ nav ul li a{
 	 padding-right: 5px;
 	 padding-left: 5px;
 	 padding-bottom: 40px;
+	 font-size: 10px ;
 }
 nav ul li:hover{
 	background-color: #58dd94;
