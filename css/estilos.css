@@ -331,7 +331,10 @@ form button{
 }
 /*termina contacto*/
 /*empieza productos*/
-
+.container{
+	width: 86%;
+	margin-left: 12%;
+}
 .productos_main{
 	background-color: #101d24;
 }
@@ -362,7 +365,7 @@ form button{
 }
 .col-xl-4 img{
 	width: 100%;
-	height: 67.6%;
+	height: 60%;
 }
 /*termina productos*/
 }
