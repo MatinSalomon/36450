@@ -30,7 +30,7 @@ p{
 
 .grid{
 	display: grid;
-	grid-template-areas: 'c1 c1 c1 c2'
+	grid-template-areas: 'c1 c1 c2 c2'
 						 'c3 c3 c3 c3'
 						 'c4 c4 c4 c4';
 	grid-template-rows: 85px 90% 280px;
