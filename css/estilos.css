@@ -235,6 +235,7 @@ form button{
 	height: 67.6%;
 }
 /*termina productos*/
+/*empieza nosotros*/
 #grid_nosotros{
 	display: grid;
 	grid-template-areas: 'n1 n1 n2';
@@ -264,6 +265,7 @@ form button{
 	width: 40%;
 	text-align: center;
 	padding: 0px 10px;
+}
 }
 
 /* aca empieza el media de tablet */
