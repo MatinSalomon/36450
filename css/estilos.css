@@ -287,6 +287,12 @@ nav ul li a{
 
 
 /*empieza el footer*/
+footer h1{
+	font-size: 25px;
+}
+footer h2{
+	font-size: 25px;
+}
 .p_privacidad{
 	float: left;
 	font-size: 13px;
@@ -361,7 +367,7 @@ form button{
 }
 
 /* aca empieza el media para movil */
-@media (min-width: 0px) and (max-width:  767px){ 
+@media(max-width:  767px){ 
 
 .grid{
 	display: grid;
@@ -477,9 +483,18 @@ form{
 
 /*empieza nosotros*/
 #grid_nosotros{
-	grid-template-rows:  700px;
+	grid-template-rows:  600px;
 
 }
 /*termmina nosotros*/
 }/*termina vista movil*/
 
+@media (max-width: 576px){
+	#grid_nosotros{
+	grid-template-rows:  740px;
+
+}
+	#nosotros_img{
+		margin-top: 100px;
+}
+}
