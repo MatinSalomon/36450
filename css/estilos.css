@@ -131,45 +131,37 @@
     background-color: #58dd94;
   }
 
-  footer h1 {
-    font-size: 50px;
+  #h1_privacidad {
+    font-size: 300%;
     text-align: center;
     color: #152510;
   }
 
-  #privacidad {
+  #privacidad, #seguinos, #contacto {
     width: 33%;
   }
 
-  .p_privacidad {
+  #p_privacidad, .p_conacto {
+    font-size: 70%;
     color: #152510;
     text-align: center;
-    margin: 0px 120px;
+    margin: 0px 0px;
   }
 
   footer h2 {
-    font-size: 50px;
+    font-size: 300%;
     text-align: center;
     color: #152510;
-  }
-
-  #contacto {
-    width: 33%;
   }
 
   .p_conacto {
-    color: #152510;
-    text-align: center;
+    margin: 0px;
   }
 
-  #seguinos {
-    width: 33%;
-  }
-
-  #seguinos a {
-    height: 25px;
-    width: 25px;
-    margin-left: 5vw;
+  #seguinos .icon_footer {
+    height: 22%;
+    width: 15%;
+    margin-left: 4vw;
   }
 
   /*termina el footer*/
@@ -285,7 +277,7 @@
   /*termina nosotros*/
 }
 /*termina la vista desktop*/
-/* aca empieza el media de tablet */
+/* !EMPIEZA VISTA TABLET*/
 @media (max-width: 1023px) {
   .grid {
     display: grid;
@@ -294,18 +286,18 @@
   }
 
   /*empieza cabecera*/
-  nav ul li a ul li a {
+  nav ul li a {
     font-size: 17px;
   }
 
   /*termina cebezera*/
   /*empieza el footer*/
-  footer h1 {
-    font-size: 25px;
+  footer #h1_privacidad {
+    font-size: 150%;
   }
 
   footer h2 {
-    font-size: 25px;
+    font-size: 150%;
   }
 
   .p_privacidad {
@@ -320,11 +312,9 @@
   }
 
   #seguinos {
-    font-size: 25px;
     margin: 0px;
     width: 33%;
   }
-
   #seguinos a {
     margin-left: 20%;
   }
@@ -335,7 +325,6 @@
     margin: 0px;
     padding: 20px;
   }
-
   form button {
     padding: 10px;
     font-size: 40px;
@@ -347,8 +336,7 @@
     width: 86%;
     margin-left: 10%;
   }
-
-  .container .row .col-xl-4 .row .col-xl-4 {
+  .container .row .col-xl-4 {
     padding-bottom: 140px;
   }
 
