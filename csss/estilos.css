@@ -132,7 +132,7 @@
 
   #h1_privacidad {
     font-size: 300%;
-    text-align: center;
+    text-align: left;
     color: #152510;
   }
 
@@ -162,7 +162,7 @@
   }
 
   #seguinos .icon_footer {
-    height: 28%;
+    height: 22%;
     width: 15%;
     margin-left: 4vw;
   }
@@ -468,7 +468,7 @@
   }
 
   #seguinos .icon_footer {
-    height: 18%;
+    height: 22%;
     width: 15%;
     margin-left: 4vw;
   }

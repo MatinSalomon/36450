@@ -117,7 +117,6 @@
     }
     }
     #p_de_img{
-        animation-delay: 1s;
         animation-duration: 2s;
         animation-name: animacion_texto;
         color: #FFFFFF;
@@ -129,6 +128,12 @@
     /*termina index*/
     
     /*empieza el footer*/
+    @mixin h1_footer ($fs, $text, $color) {
+        font-size: $fs;
+        text-align: $text;
+        color: $color;
+        
+    }
     .footer{ 
         grid-area: c4;
         display: flex;
@@ -139,16 +144,14 @@
     }
        
     #h1_privacidad{
-        font-size: 300%;
-        text-align: center;
-        color: #152510;
+        @include h1_footer (300%, center, #152510)
         }
 
     #privacidad{
         width: 33%;
     }
     #p_privacidad{
-        font-size: 70%;
+        font-size: 77%;
         color: #152510;
         text-align: center;
         margin: 0px 0px;
@@ -164,14 +167,17 @@
         @extend #privacidad ;
     }
     .p_conacto{
-        @extend #p_privacidad ;
+        font-size: 85%;
+        color: #152510;
+        text-align: center;
         margin: 0px;
+        padding: 10px
     }
 
     #seguinos{
         @extend #privacidad ;
         .icon_footer{
-        height: 22%;
+        height: 28%;
         width: 15%;
         margin-left: 4vw;
         }
@@ -181,7 +187,7 @@
     /*parte de contacto*/
     .content{
         background-color: #2f483a;
-        height: 600px;
+        height: 670px;
         width: 80%;
         margin: 10% 10%;
     }
@@ -190,12 +196,15 @@
         text-align: center;
         padding-top: 25px;
         color: #fff;
-        font-size: 40px;
+        font-size: 50px;
     }
     }
     form{
         margin: 0px;
         padding: 0px;
+        p{
+            font-size: 20px;
+        }
     }
     form > *{
         padding: 10px;
@@ -317,11 +326,21 @@
         }
     }/*termina cebezera*/
     
+    #p_de_img{
+        font-size: 70%;
+    }
     
     /*empieza el footer*/
+    
     footer{
         #h1_privacidad{
         font-size: 150%;
+    }
+    #p_privacidad{
+        font-size: 60%;
+        color: #152510;
+        text-align: center;
+        margin: 0px 0px;
     }
 }
     footer{
@@ -329,26 +348,24 @@
          font-size: 150%;
     }
     }
-    .p_privacidad{
-        float: left;
-        font-size: 13px;
-        margin: 0px;
-    }
     .p_conacto{
-        font-size: 13px;
+        font-size: 70%;
+        padding: 7px;
         text-align: center;
     }
-    #seguinos{
-        margin: 0px;
-        width: 33%;
-        a{
-            margin-left: 20%;
-        }
-    }
+   
     
     /*termina el footer*/
     
     /*empieza de contacto*/
+    .content{
+        h1{
+        text-align: center;
+        padding-top: 25px;
+        color: #fff;
+        font-size: 50px;
+    }
+    }
     form{
         margin: 0px;
         padding: 20px;
@@ -410,7 +427,7 @@
     /*termina nosotros*/
     }
     
-    /* aca empieza el media para movil */
+    /* ! aca empieza el media para movil */
     @media(max-width:  767px){ 
     
     .grid{
@@ -449,6 +466,7 @@
     
     /*empieza index*/
     .texto_video{
+        font-size: 80%;
         padding-top: 40px;
         padding-bottom: 20px;
         margin-left: 5px;
@@ -471,7 +489,7 @@
     #p_de_img{
         font-size: 10px;
         text-align: center;
-        margin-top: 13vw;
+        margin-top: 23vw;
         margin-left: 30vw;
         margin-right: 10vw;
     }
@@ -479,31 +497,38 @@
     
     /*empieza el footer*/
     footer{
-        h1{
-        font-size: 25px;
+        #h1_privacidad{
+            font-size: 100%;
+        }
+        #p_privacidad{
+            font-size: 20%;
+        }
     }
-        
-    }
-    .p_privacidad{
-        font-size: 12px;
-        text-align: left;
-        margin: 0px 0px;
-    }
-    footer{
+    footer {
         h2{
-        font-size: 25px;
-    }
+            font-size: 100%;
+        }
+    } 
         
+
+
+    .p_conacto {
+        font-size: 40%;
+        padding: 4px;
     }
-    
-    .p_conacto{
-        font-size: 10px;
-    }
+      
     
     #seguinos a{
         a{
         margin-left: 7%;
     }
+    }
+    #seguinos {
+        .icon_footer{
+        height: 18%;
+        width: 15%;
+        margin-left: 4vw;
+        }
     }
     /*termina el footer*/
     
@@ -552,6 +577,14 @@
         #grid_nosotros{
         grid-template-rows:  740px;
     
+    }
+    footer{
+        #h1_privacidad{
+            font-size: 100%;
+        }
+        #p_privacidad{
+            font-size: 20%;
+        }
     }
         #nosotros_img{
             margin-top: 100px;
