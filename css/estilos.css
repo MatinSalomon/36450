@@ -29,7 +29,7 @@
 
   .grid {
     display: grid;
-    grid-template-areas: "c1 c1 c2 c2" "c3 c3 c3 c3" "c4 c4 c4 c4";
+    grid-template-areas: "c1 c2 c2 c2" "c3 c3 c3 c3" "c4 c4 c4 c4";
     grid-template-rows: 85px 90% 280px;
   }
 
@@ -42,6 +42,14 @@
   .menu {
     grid-area: c2;
     background-color: #101d24;
+  }
+
+  label {
+    display: none;
+  }
+
+  input {
+    display: none;
   }
 
   nav ul {
@@ -203,6 +211,11 @@
     color: #fff;
     margin: 10px 0px;
     border-bottom: 1px solid black;
+    display: block;
+  }
+
+  form label {
+    display: inline-block;
   }
 
   form button button {
@@ -234,11 +247,12 @@
     border-bottom: solid 2px #fff;
     color: #Fff;
     font-size: 50px;
+    width: 141%;
   }
   .container .row .col-xl-4 img {
     padding-top: 0px;
     padding-bottom: 25px;
-    width: 100%;
+    width: 141%;
     height: 67.6%;
   }
 
@@ -287,13 +301,56 @@
 @media (max-width: 1023px) {
   .grid {
     display: grid;
-    grid-template-areas: "c1 c2 c2 c2 " "c3 c3 c3 c3 " "c4 c4 c4 c4";
-    grid-template-rows: 85px 90% 200px;
+    grid-template-areas: "c1 c1 c1 c1 " "c2 c2 c2 c2 " "c3 c3 c3 c3 " "c4 c4 c4 c4";
+    grid-template-rows: 100px 450px 90% 200px;
   }
 
   /*empieza cabecera*/
+  header {
+    margin: 0px;
+    padding: 0%;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  nav ul {
+    display: none;
+  }
   nav ul li a {
-    font-size: 17px;
+    padding-right: 100%;
+  }
+
+  input:checked ~ ul {
+    display: block;
+  }
+
+  nav ul li:hover {
+    background-color: #58dd94;
+  }
+
+  nav input {
+    display: none;
+  }
+
+  nav label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    margin-left: 49%;
+  }
+
+  .material-symbols-outlined {
+    color: #58dd94;
+    font-size: 50px;
   }
 
   /*termina cebezera*/
@@ -344,7 +401,7 @@
   /*empieza productos*/
   .container {
     width: 86%;
-    margin-left: 10%;
+    margin-left: 2%;
   }
   .container .row .col-xl-4 {
     padding-bottom: 140px;
@@ -381,35 +438,59 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
-  /*termina nosotros*/
 }
+/*termina nosotros*/
 /* ! aca empieza el media para movil */
 @media (max-width: 767px) {
   .grid {
     display: grid;
-    grid-template-areas: "c1 c2 c2 c2 " "c3 c3 c3 c3 " "c4 c4 c4 c4";
-    grid-template-rows: 85px 95% 180px;
+    grid-template-areas: "c1 c1 c1 " "c2 c2 c2 " "c3 c3 c3 " "c4 c4 c4 ";
+    grid-template-rows: 85px 420px 80% 180px;
   }
 
   /*empieza cabezera*/
-  .logo {
-    margin-top: 10px;
-    float: left;
-    font-size: 40px;
-    list-style-type: none;
+  header {
+    margin: 0px;
+    padding: 0%;
   }
 
-  nav ul li {
-    padding-top: 33px;
-    padding-bottom: 33px;
+  .logo {
+    text-align: center;
   }
-  nav ul li a {
-    padding-top: 23px;
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-bottom: 40px;
-    font-size: 10px;
+
+  nav ul {
+    display: none;
+  }
+
+  input:checked ~ ul {
+    display: block;
+  }
+
+  nav ul li:hover {
+    background-color: #58dd94;
+  }
+
+  nav input {
+    display: none;
+  }
+
+  nav label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    margin-left: 49%;
+  }
+
+  .material-symbols-outlined {
+    color: #58dd94;
+    font-size: 50px;
   }
 
   /*termina cabezera*/
@@ -418,9 +499,7 @@
     font-size: 80%;
     padding-top: 40px;
     padding-bottom: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-    text-align: center;
+    text-align: left;
   }
 
   .video_pc {
@@ -451,7 +530,7 @@
     font-size: 100%;
   }
   footer #p_privacidad {
-    font-size: 20%;
+    font-size: 50%;
   }
 
   footer h2 {
@@ -500,7 +579,6 @@
   }
 
   .container {
-    margin: 0px;
     padding: 0px;
   }
 
@@ -522,11 +600,11 @@
     font-size: 100%;
   }
   footer #p_privacidad {
-    font-size: 20%;
+    font-size: 39%;
   }
 
   #nosotros_img {
-    margin-top: 100px;
+    margin-top: 130px;
   }
 }
 
