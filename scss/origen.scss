@@ -327,7 +327,7 @@ $img: map-get($ancho , chico);
                              'c2 c2 c2 c2 '
                              'c3 c3 c3 c3 '
                              'c4 c4 c4 c4';
-        grid-template-rows: 100px 450px 90% 200px;
+        grid-template-rows: 100px auto 90% 200px;
     }
     /*empieza cabecera*/
     header{
@@ -349,6 +349,7 @@ $img: map-get($ancho , chico);
       }
       input:checked  ~ ul{
         display:block;
+        height: 360px;
       }
       nav ul li:hover{
           background-color: $color-secundario;
@@ -491,7 +492,7 @@ $img: map-get($ancho , chico);
                              'c2 c2 c2 '
                              'c3 c3 c3 '
                              'c4 c4 c4 ';
-        grid-template-rows: 85px 420px 80% 180px;
+        grid-template-rows: 85px auto 100% 180px;
     }
     
     
@@ -508,7 +509,7 @@ $img: map-get($ancho , chico);
       }
       input:checked  ~ ul{
         display:block;
-
+        height: 360px;
       }
       nav ul li:hover{
           background-color: $color-secundario;

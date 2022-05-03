@@ -302,7 +302,7 @@
   .grid {
     display: grid;
     grid-template-areas: "c1 c1 c1 c1 " "c2 c2 c2 c2 " "c3 c3 c3 c3 " "c4 c4 c4 c4";
-    grid-template-rows: 100px 450px 90% 200px;
+    grid-template-rows: 100px auto 90% 200px;
   }
 
   /*empieza cabecera*/
@@ -324,6 +324,7 @@
 
   input:checked ~ ul {
     display: block;
+    height: 360px;
   }
 
   nav ul li:hover {
@@ -445,7 +446,7 @@
   .grid {
     display: grid;
     grid-template-areas: "c1 c1 c1 " "c2 c2 c2 " "c3 c3 c3 " "c4 c4 c4 ";
-    grid-template-rows: 85px 420px 80% 180px;
+    grid-template-rows: 85px auto 100% 180px;
   }
 
   /*empieza cabezera*/
@@ -464,6 +465,7 @@
 
   input:checked ~ ul {
     display: block;
+    height: 360px;
   }
 
   nav ul li:hover {
