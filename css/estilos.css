@@ -295,6 +295,43 @@
   }
 
   /*termina nosotros*/
+  /*empieza parte de portatiles*/
+  .portatiles {
+    background-color: #101d24;
+  }
+  .portatiles h1 {
+    margin: 50px;
+    text-align: center;
+    font-size: 100px;
+    color: #fff;
+  }
+  .portatiles p {
+    color: #fff;
+  }
+
+  .container .row .col-xl-4 {
+    padding-bottom: 120px;
+    margin: 0px;
+    padding: 100px;
+  }
+  .container .row .col-xl-4 .btn {
+    margin: auto 35%;
+  }
+  .container .row .col-xl-4 h3 {
+    border-bottom: solid 2px #fff;
+    color: #Fff;
+    font-size: 50px;
+    width: 141%;
+    text-align: center;
+  }
+  .container .row .col-xl-4 img {
+    padding-top: 0px;
+    padding-bottom: 25px;
+    width: 141%;
+    height: 67.6%;
+  }
+
+  /*termina portatiles*/
 }
 /*termina la vista desktop*/
 /* !EMPIEZA VISTA TABLET*/
@@ -346,7 +383,7 @@
     font-weight: bold;
     text-align: center;
     user-select: none;
-    margin-left: 49%;
+    margin-left: 47%;
   }
 
   .material-symbols-outlined {
@@ -487,7 +524,7 @@
     font-weight: bold;
     text-align: center;
     user-select: none;
-    margin-left: 49%;
+    margin-left: 47%;
   }
 
   .material-symbols-outlined {
@@ -591,6 +628,12 @@
   }
 
   /*termmina nosotros*/
+  /*empieza portatiles*/
+  .container .row .col-xl-4 .btn {
+    margin: auto 58%;
+  }
+
+  /*termina portatiles*/
 }
 /*termina vista movil*/
 @media (max-width: 576px) {
